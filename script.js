@@ -28,7 +28,7 @@ let modal = {
      modal.closeModal();
     }
     };
-    window.history.pushState({"formtoggle": false},"","8.html"); //история API реализации
+    window.history.pushState({"formtoggle": false},"","index.html"); //история API реализации
     window.addEventListener("popstate",(event) => {
     (event.state.formtoggle)? (modal.wrapper.style.display = "flex") : (modal.wrapper.style.display = "none");
     });
